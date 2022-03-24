@@ -9,11 +9,27 @@
         <PreviewImage>Resources\Checkmarx.ico</PreviewImage>
     </Metadata>
     <Installation>
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[10.0,17.0)" />
+        <!--<InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[10.0,17.0)" />
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[10.0,17.0)" />
         <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[10.0,17.0)" />
-        <InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[10.0,17.0)" />
-    </Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Premium" Version="[10.0,17.0)" />-->
+
+	<!--	<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)">
+			<ProductArchitecture>x86</ProductArchitecture>
+		</InstallationTarget>-->
+
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)">
+			<ProductArchitecture>x86</ProductArchitecture>
+		</InstallationTarget>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,18.0)">
+			<ProductArchitecture>amd64</ProductArchitecture>
+		</InstallationTarget>
+
+	
+
+
+
+	</Installation>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
     </Assets>

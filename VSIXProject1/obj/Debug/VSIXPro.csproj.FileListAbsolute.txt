@@ -1,0 +1,5 @@
+C:\Users\venkaiahg\source\repos\checkmarx-ltd\VisualStudio\VSIXProject1\obj\Debug\VSIXPro.csproj.AssemblyReference.cache
+C:\Users\venkaiahg\source\repos\checkmarx-ltd\VisualStudio\VSIXProject1\obj\Debug\_EmptyResource.resources
+C:\Users\venkaiahg\source\repos\checkmarx-ltd\VisualStudio\VSIXProject1\obj\Debug\VSIXPro.csproj.GenerateResource.cache
+C:\Users\venkaiahg\source\repos\checkmarx-ltd\VisualStudio\VSIXProject1\obj\Debug\VSIXPro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\venkaiahg\source\repos\checkmarx-ltd\VisualStudio\VSIXProject1\obj\Debug\VSIXPro.csproj.CoreCompileInputs.cache

@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject2\\VSIXProm.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject2\\VSIXProm.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject2\\VSIXProm.csproj",
+        "projectName": "VSIXProm",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject2\\VSIXProm.csproj",
+        "packagesPath": "C:\\Users\\venkaiahg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject2\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\venkaiahg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.9.2021, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.31902.203, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

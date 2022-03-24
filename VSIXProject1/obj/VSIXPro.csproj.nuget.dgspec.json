@@ -1,0 +1,239 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject1\\VSIXPro.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj",
+        "projectName": "CxViewerAction",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj",
+        "projectName": "ColorButton",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj",
+        "projectName": "DgvFilterPopup",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\CxViewerVSIX.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\CxViewerVSIX.csproj",
+        "projectName": "CxViewerVSIX",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\CxViewerVSIX.csproj",
+        "packagesPath": "C:\\Users\\venkaiahg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\venkaiahg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.ServiceHub.Analyzers": {
+              "target": "Package",
+              "version": "[3.1.2036, )"
+            },
+            "Microsoft.VSSDK.BuildTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.9.2021, )"
+            },
+            "Microsoft.VisualStudio.OLE.Interop": {
+              "target": "Package",
+              "version": "[17.1.32210.191, )"
+            },
+            "Microsoft.VisualStudio.Shell.Immutable.10.0": {
+              "target": "Package",
+              "version": "[16.10.31321.278, )"
+            },
+            "envdte80": {
+              "target": "Package",
+              "version": "[17.1.32210.191, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject1\\VSIXPro.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject1\\VSIXPro.csproj",
+        "projectName": "VSIXPro",
+        "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject1\\VSIXPro.csproj",
+        "packagesPath": "C:\\Users\\venkaiahg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\VSIXProject1\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\venkaiahg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\Common\\Common.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerAction\\CxViewerAction.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerColorButton\\ColorButton.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerDgvFilterPopup\\DgvFilterPopup.csproj"
+              },
+              "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\CxViewerVSIX.csproj": {
+                "projectPath": "C:\\Users\\venkaiahg\\source\\repos\\checkmarx-ltd\\VisualStudio\\CxViewerVSIX\\CxViewerVSIX.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[16.9.2021, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.31902.203, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
