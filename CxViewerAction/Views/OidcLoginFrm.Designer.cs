@@ -41,6 +41,7 @@ namespace CxViewerAction.Views
             this.oidcLoginCtrl2.Name = "oidcLoginCtrl2";
             this.oidcLoginCtrl2.Size = new System.Drawing.Size(495, 574);
             this.oidcLoginCtrl2.TabIndex = 0;
+            this.oidcLoginCtrl2.Load += new System.EventHandler(this.oidcLoginCtrl2_Load);
             // 
             // OidcLoginFrm
             // 

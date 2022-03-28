@@ -383,6 +383,7 @@ namespace CxViewerAction.Helpers
 
             if (!string.IsNullOrWhiteSpace(login.AuthenticationType) && login.AuthenticationType == Constants.AuthenticationaType_DefaultValue)
             {
+                
                 _oidcLoginHelper.resetLatestResult();
                 oidcLoginResult = _oidcLoginHelper.ConnectToIdentidyProvider(login.ServerBaseUri);
             }

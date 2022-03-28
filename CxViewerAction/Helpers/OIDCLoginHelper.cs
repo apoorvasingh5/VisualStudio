@@ -8,18 +8,19 @@ namespace CxViewerAction.Helpers
 {
     public class OIDCLoginHelper
     {
-        private readonly OidcLoginFrm _oidcLoginFrm = new OidcLoginFrm();
+        
+        private readonly BrowserForm browserForm = new BrowserForm();
         private readonly AutoResetEvent _oidcLoginEvent = new AutoResetEvent(false);
         public static bool errorWasShown = false;
-
         private OidcLoginResult _latestResult;
 
         public OIDCLoginHelper()
         {
-			_oidcLoginFrm.OidcLoginCtrl2.NavigationCompleted += OidcLoginCtrlOnNavigationCompleted;
-			_oidcLoginFrm.OidcLoginCtrl2.NavigationError += OidcLoginCtrlOnNavigationError;
-			_oidcLoginFrm.UserClosedForm += OnUserClosedForm;
-			_latestResult = new OidcLoginResult(false, string.Empty, null);
+           
+            browserForm.NavigationCompleted += OidcLoginCtrlOnNavigationCompleted;
+            browserForm.NavigationError += OidcLoginCtrlOnNavigationError;
+            
+			
 		}
 
 		public void resetLatestResult()
@@ -45,14 +46,18 @@ namespace CxViewerAction.Helpers
         {
             _latestResult = new OidcLoginResult(true, string.Empty, code);
             _oidcLoginEvent.Set();
+  
         }
 
         private void ConectAndWait(string baseServerUri)
         {
-            _oidcLoginFrm.OidcLoginCtrl2.Invoke(new MethodInvoker(() =>
+            browserForm.Show();
+            browserForm.Invoke(new MethodInvoker(() =>
             {
-                _oidcLoginFrm.Show();
-                _oidcLoginFrm.ConnectToIdentidyProvider(baseServerUri);
+                browserForm.Show();
+                browserForm.ConnectToIdentidyProvider(baseServerUri);
+                Application.Run(browserForm);
+
             }));
             _oidcLoginEvent.WaitOne();
         }
@@ -60,15 +65,14 @@ namespace CxViewerAction.Helpers
         public OidcLoginResult ConnectToIdentidyProvider(string baseServerUri)
         {
 
-			ConectAndWait(baseServerUri);
-
-            _oidcLoginFrm.CloseForm();
+            ConectAndWait(baseServerUri);
+            browserForm.CloseForm();
             return _latestResult;
         }
 
 		public void CloseLoginWindow()
 		{
-			_oidcLoginFrm.CloseForm();
+            browserForm.CloseForm();
 		}
     }
 }

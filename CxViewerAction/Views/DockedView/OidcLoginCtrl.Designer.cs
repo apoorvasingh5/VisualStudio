@@ -20,7 +20,9 @@ namespace CxViewerAction.Views.DockedView
                 components.Dispose();
             }
             base.Dispose(disposing);
+           
         }
+        
 
         #region Component Designer generated code
         [STAThread]
@@ -41,6 +43,7 @@ namespace CxViewerAction.Views.DockedView
             this.webBrowserIdentityProvider.Name = "webBrowserIdentityProvider";
             this.webBrowserIdentityProvider.Size = new System.Drawing.Size(388, 572);
             this.webBrowserIdentityProvider.TabIndex = 0;
+            this.webBrowserIdentityProvider.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowserIdentityProvider_DocumentCompleted);
             // 
             // OidcLoginCtrl
             // 

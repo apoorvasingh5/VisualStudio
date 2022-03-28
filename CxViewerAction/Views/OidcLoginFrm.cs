@@ -32,6 +32,7 @@ namespace CxViewerAction.Views
         private void SamlLoginFrm_FormClosing(object sender, FormClosingEventArgs e)
         {
             e.Cancel = true;
+            
             CloseForm();
             if (e.CloseReason == CloseReason.UserClosing)
             {
@@ -40,6 +41,11 @@ namespace CxViewerAction.Views
                     UserClosedForm(this, new EventArgs());
                 }
             }
+        }
+
+        private void oidcLoginCtrl2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

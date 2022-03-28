@@ -139,8 +139,15 @@ namespace CxViewerAction.Views.DockedView
             ChangeIeVersion();
             Logger.Create().Debug("Navigating to " + serverURL + " headers " + header);
             webBrowserIdentityProvider.Navigate(serverURL, string.Empty, postDataBytes, header);
+            
+         
         }
 
-		#endregion
-	}
+        #endregion
+
+        private void webBrowserIdentityProvider_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+    }
 }
