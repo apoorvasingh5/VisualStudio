@@ -30,39 +30,50 @@ namespace CxViewerAction.Views
             InitializeComponent();
         }
         ChromiumWebBrowser browser;
+        static bool IsIntialized= false ;
+        public static void IsbrowserIntialized()
+        {
+          if(IsIntialized == false)
+            {
+                CefSharpSettings.ShutdownOnExit = false;
+                CefSettings settings = new CefSettings();
+                Cef.Initialize(settings);
+                IsIntialized = true;
+            }
+        }
+
         private void BrowserForm_Load(object sender, EventArgs e)
         {
-            CefSettings settings = new CefSettings();
-            Cef.Initialize(settings);
+
             browser = new ChromiumWebBrowser();
-            //browser.RequestContext = new RequestContext();
             this.pContainer.Controls.Add(browser);
             browser.Dock = DockStyle.Fill;
             browser.AddressChanged += OnBrowserAddressChanged;
             browser.FrameLoadEnd += chromium_FrameLoadEnd;
+            
         }
-
 
         public void LoadUrl(string url)
         {
+            browser.ExecuteScriptAsync("document.oncontextmenu = function() { return false; };");
             browser.Load(url);
-          
+
         }
 
         private void OnBrowserAddressChanged(object sender, AddressChangedEventArgs e)
         {
+            browser.ExecuteScriptAsync("document.oncontextmenu = function() { return false; };");
             Uri urlAddress = new Uri(browser.Address.ToString());
-            //txtUrl.Text = urlAddress.ToString();
             Logger.Create().Debug("Navigation complete for " + urlAddress.ToString());
             string queryString = urlAddress.Query;
-           
+
             if (string.IsNullOrWhiteSpace(queryString))
             {
 
                 return;
 
             }
-           
+
             string errorMessage = TryGetErrorFromQueryString(queryString);
             if (errorMessage == null)
             {
@@ -72,7 +83,7 @@ namespace CxViewerAction.Views
             Logger.Create().Debug("Navigation complete with error " + errorMessage);
             if (NavigationError != null)
             {
-             
+
                 browser.LoadUrl(BLANK_PAGE);
                 NavigationError(this, errorMessage);
 
@@ -81,10 +92,11 @@ namespace CxViewerAction.Views
         private void chromium_FrameLoadEnd(object sender, CefSharp.FrameLoadEndEventArgs e)
         {
             // Was the loaded page the first page load?
+            browser.ExecuteScriptAsync("document.oncontextmenu = function() { return false; };");
             Logger.Create().Debug("Checking for presence of authorization code in the URL. " + e.Url.ToLower());
-            if (!e.Url.ToLower().Contains("code=") ) 
+            if (!e.Url.ToLower().Contains("code="))
             {
-                
+
                 return;
             }
             Logger.Create().Debug("Extracting authorization code from the URL. ");
@@ -98,7 +110,7 @@ namespace CxViewerAction.Views
                 browser.Invoke(new MethodInvoker(() =>
                 {
                     this.Close();
-                   
+
                 }));
             }
         }
@@ -149,21 +161,21 @@ namespace CxViewerAction.Views
 
             if (browser.IsBrowserInitialized == true)
             {
-               
+
                 browser.LoadUrlWithPostData(serverurl, postDataBytes, contentType);
 
             }
             else
             {
                 browser.LoadUrl(serverURL1);
-                
+
             }
-     
+
         }
- 
+
         private void BrowserForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-          
+
             CloseForm();
             if (e.CloseReason == CloseReason.UserClosing)
             {
@@ -183,7 +195,6 @@ namespace CxViewerAction.Views
 
             browser.Hide();
         }
-     
 
     }
 }

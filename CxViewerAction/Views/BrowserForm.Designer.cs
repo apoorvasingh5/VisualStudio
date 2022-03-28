@@ -29,6 +29,7 @@ namespace CxViewerAction.Views
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowserForm));
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.pContainer = new System.Windows.Forms.Panel();
             this.SuspendLayout();
@@ -58,11 +59,13 @@ namespace CxViewerAction.Views
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.txtUrl);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BrowserForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BrowserForm";
+            this.Text = "Login";
+            this.TransparencyKey = System.Drawing.Color.White;
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.BrowserForm_FormClosed);
             this.Load += new System.EventHandler(this.BrowserForm_Load);
             this.ResumeLayout(false);

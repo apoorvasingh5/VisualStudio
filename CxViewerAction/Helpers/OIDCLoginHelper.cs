@@ -8,25 +8,19 @@ namespace CxViewerAction.Helpers
 {
     public class OIDCLoginHelper
     {
-        
-        private readonly BrowserForm browserForm = new BrowserForm();
         private readonly AutoResetEvent _oidcLoginEvent = new AutoResetEvent(false);
         public static bool errorWasShown = false;
         private OidcLoginResult _latestResult;
 
         public OIDCLoginHelper()
         {
-           
-            browserForm.NavigationCompleted += OidcLoginCtrlOnNavigationCompleted;
-            browserForm.NavigationError += OidcLoginCtrlOnNavigationError;
-            
-			
-		}
 
-		public void resetLatestResult()
-		{
-			_latestResult = new OidcLoginResult(false, string.Empty, null);
-		}
+        }
+
+        public void resetLatestResult()
+        {
+            _latestResult = new OidcLoginResult(false, string.Empty, null);
+        }
 
         private void OnUserClosedForm(object sender, EventArgs e)
         {
@@ -37,7 +31,7 @@ namespace CxViewerAction.Helpers
         private void OidcLoginCtrlOnNavigationError(object sender, string errorMessage)
         {
             errorWasShown = true;
-            MessageBox.Show(errorMessage,"Error", MessageBoxButtons.OK);
+            MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK);
             _latestResult = new OidcLoginResult(false, errorMessage, null);
             _oidcLoginEvent.Set();
         }
@@ -46,11 +40,15 @@ namespace CxViewerAction.Helpers
         {
             _latestResult = new OidcLoginResult(true, string.Empty, code);
             _oidcLoginEvent.Set();
-  
+
         }
 
         private void ConectAndWait(string baseServerUri)
         {
+            var browserForm = new BrowserForm();
+            browserForm.NavigationCompleted += OidcLoginCtrlOnNavigationCompleted;
+            
+            BrowserForm.IsbrowserIntialized();
             browserForm.Show();
             browserForm.Invoke(new MethodInvoker(() =>
             {
@@ -66,13 +64,12 @@ namespace CxViewerAction.Helpers
         {
 
             ConectAndWait(baseServerUri);
-            browserForm.CloseForm();
             return _latestResult;
         }
 
-		public void CloseLoginWindow()
-		{
-            browserForm.CloseForm();
-		}
+        public void CloseLoginWindow()
+        {
+            //browserForm.CloseForm();
+        }
     }
 }
